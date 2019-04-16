@@ -18,5 +18,8 @@ npm install
 npm start
 ```
 
+## How to use
+You need to be login to publish or edit a post, there is a user already created (username : root, password : root).
+
 ## Live Version
 A live version is avaible at [this address](http://gayraud.tech)
