@@ -1,0 +1,24 @@
+
+<%- include('partials/header.ejs', {connected: connected}) %>
+    <div class="table-wrapper">
+        <% if (posts.length > 0) {%>
+        <% posts.forEach((posts, index) => { %>
+        <a href="/view/<%= posts.id %>" style="color: white">
+            <div class="card w-50 mx-auto text-white bg-dark border-light" style="width: 18rem; margin-top: 6vh; margin-bottom: 1vh">
+                <div class="card-body">
+                    <h4 class="card-title"><%=posts.title.length >= 80 ? posts.title.substring(0, 80) + "..." : posts.title%></h4>
+                    <p class="card-text" style="margin-bottom: 1vh"><%= posts.content.length >= 100 ? posts.content.substring(0, 100) + "..." : posts.content%></p>
+                    <footer class="blockquote-footer" style="margin-bottom: 1vh">Posted on <cite title="Source Title"><%= new Date(posts.date).toDateString() %></cite></footer>
+                    <a href="/edit/<%= posts.id %>" class="btn btn-sm btn-warning">Edit</a>
+                    <a href="/delete/<%= posts.id %>" class="btn btn-sm btn-danger">Delete</a>
+                </div>
+            </div>
+        </a>
+        <% }) %>
+        <% } else { %>
+        <p class="text-center">No post found. Go <a href="/add" >here</a> to post an article.</p>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>

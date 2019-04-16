@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+<div class="container">
+    <% if (message) { %>
+    <p class="text-center text-danger"><%= message %></p>
+    <% } %>
+
+    <% if (post) { %>
+    <div class="card bg-dark" style="margin-top: 5vh">
+        <div class="card-header" style="color: white">
+            <%= new Date(post.date).toDateString() %>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title" style="color: white"><%= post.title %></h2>
+            <p class="card-text" style="color: white"><%= post.content%></p>
+        </div>
+    </div>
+    <% } else { %>
+    <p class="text-center">Post Not Found. Go <a href="/add">here</a> to add posts.</p>
+    <% } %>
+</div>
+</div>
+</body>
+</html>

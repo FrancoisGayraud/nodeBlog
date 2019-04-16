@@ -1,0 +1,22 @@
+{
+  "name": "nodeblog",
+  "version": "1.0.0",
+  "description": "a blog written in javascript with node and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4",
+    "express-session": "^1.16.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.11",
+    "req-flash": "0.0.3",
+    "startbootstrap-clean-blog": "^5.0.5"
+  }
+}

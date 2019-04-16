@@ -1,0 +1,21 @@
+<% include partials/header.ejs %>
+<div class="container">
+    <% if (message != '') { %>
+    <p class="text-center text-warning" style="margin-top: 5vh"><%= message %></p>
+    <% } %>
+    <form class="add-post-form" action="" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label style="color: white" for="username">Username</label>
+                <input style="color: white" type="text" class="form-control bg-dark" name="username" id="username" required>
+            </div>
+            <div class="form-group col-md-12">
+                <label style="color: white" for="password">Password</label>
+                <input style="color: white" type="password" class="form-control bg-dark" name="password" id="password" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary float-right">Go !</button>
+    </form>
+</div>
+</body>
+</html>
