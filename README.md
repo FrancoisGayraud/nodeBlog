@@ -19,4 +19,4 @@ npm start
 ```
 
 ## Live Version
-A live version is avaible at [gayraud.tech](gayraud.tech)
+A live version is avaible at [this address](http://gayraud.tech)
